@@ -12,8 +12,10 @@ https://docs.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-re
 
 Here is the syntax with couple of examples.
 
-Currency 
-EUR:
-https://prices.azure.com/api/retail/prices?currencyCode='EUR'&$filter= armRegionName eq 'southcentralus' and serviceName eq 'Virtual Machines' and priceType eq 'Reservation'
-USD:
+Currency
+
+EUR:\
+https://prices.azure.com/api/retail/prices?currencyCode='EUR'&$filter= armRegionName eq 'southcentralus' and serviceName eq 'Virtual Machines' and priceType eq 'Reservation'\
+
+USD:\
 https://prices.azure.com/api/retail/prices?currencyCode='USD'&$filter= armRegionName eq 'southcentralus' and serviceName eq 'Virtual Machines' and priceType eq 'Reservation'
