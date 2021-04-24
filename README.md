@@ -15,7 +15,7 @@ Here is the syntax with couple of examples.
 Currency
 
 EUR:\
-https://prices.azure.com/api/retail/prices?currencyCode='EUR'&$filter= armRegionName eq 'southcentralus' and serviceName eq 'Virtual Machines' and priceType eq 'Reservation'\
+https://prices.azure.com/api/retail/prices?currencyCode='EUR'&$filter= armRegionName eq 'southcentralus' and serviceName eq 'Virtual Machines' and priceType eq 'Reservation'
 
 USD:\
 https://prices.azure.com/api/retail/prices?currencyCode='USD'&$filter= armRegionName eq 'southcentralus' and serviceName eq 'Virtual Machines' and priceType eq 'Reservation'
