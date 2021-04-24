@@ -19,12 +19,17 @@ for i in response.json()['Items']:
 
 print(response.json()["NextPageLink"])
 
-# Retrieve price list from all available pages until there is no 'NextPageLink' available to retrieve prices
+# Retrieve price list from all available pages until there is a 'NextPageLink' available to retrieve prices
 while response.json()["NextPageLink"] != None:   
     for i in response.json()['Items']:
         priceitems.append(i) 
     response = requests.get(response.json()["NextPageLink"])
     print(response.json()["NextPageLink"])
+
+# Retrieve price list from the last page when there is no "NextPageLink" available to retrieve prices
+if response.json()["NextPageLink"] == None:
+    for i in response.json()['Items']:
+        priceitems.append(i) 
 
 # Write the price list to a json file
 with open(os.path.join(filelocation,filename) + '.json', 'w') as f:
