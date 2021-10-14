@@ -1,7 +1,7 @@
 # azureretailpricesapi
 Python script to call Azure Retail Prices API and save the retail prices as an excel file
 
-Link to the blog which provides overview of Azure Retail Prices API : https://blog.cloudskills.io/azure-retail-prices-api-overview/
+Link to the blog which provides overview of Azure Retail Prices API : https://cloudskills.io/blog/azure-retail-prices-api-overview
 
 
 **Update:**
